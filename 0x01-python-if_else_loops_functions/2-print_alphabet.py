@@ -1,3 +1,2 @@
-#!/usr/bin/python3
-capital='ASCII'
-print(capital.lower())
+for i in range(97, 123):
+    print(chr(i), end='')
