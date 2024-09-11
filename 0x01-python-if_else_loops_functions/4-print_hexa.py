@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-print(''.join('{}').format(int(i)
-    for i in range(98)),end='')
+for i in range(98):
+    print(f"{i} = 0x{i:0x}")
