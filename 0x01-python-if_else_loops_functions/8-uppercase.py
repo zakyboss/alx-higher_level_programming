@@ -6,11 +6,16 @@ def uppercase(s):
     Args:
     s (str): The string to be converted to uppercase and printed.
     """
-    # Build the uppercase result string
-    result = ''.join(
-        chr(ord(char) - 32) if 'a' <= char <= 'z' else char
-        for char in s
-    )
+    # Initialize an empty string to accumulate the result
+    result = ""
 
-    # Print the result string followed by a newline
+    # Iterate through each character in the input string
+    for char in s:
+        # Convert lowercase letters to uppercase by adjusting ASCII value
+        if 'a' <= char <= 'z':
+            result += chr(ord(char) - 32)
+        else:
+            result += char
+
+    # Print the final result string in uppercase
     print(result)
